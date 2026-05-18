@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Numeros de Hoy: Loteria Nacional | Leidsa | Real | Loteka | LoteriasRD</title>
+<meta name="description" content="Resultados de hoy de la Loteria Nacional, Leidsa, Loteria Real, Loteka, La Primera, La Suerte, New York, Florida, Anguila y todos los sorteos de loterias dominicanas.">
+<meta name="keywords" content="numeros de hoy, loterias dominicanas, leidsa, loto real, loteria nacional, loteka, new york, florida, resultados sorteos rd">
+<link rel="canonical" href="https://numerosdehoy.online/">
+<meta property="og:title" content="Numeros de Hoy: Loteria Nacional | Leidsa | Real | Loteka | LoteriasRD">
+<meta property="og:description" content="Resultados de hoy de la Loteria Nacional, Leidsa, Loteria Real, Loteka, La Primera, La Suerte, New York, Florida, Anguila y todos los sorteos de loterias dominicanas.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://numerosdehoy.online/">
+<meta name="robots" content="index, follow">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { background: #111010; color: #e0e0e0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.5; min-height: 100vh; display: flex; flex-direction: column; }
+a { color: inherit; text-decoration: none; }
+a:focus-visible { outline: 2px solid #D4A017; outline-offset: 4px; border-radius: 4px; }
+
+.site-header { background: #0d0d0d; border-bottom: 2px solid #C8102E; position: sticky; top: 0; z-index: 100; }
+.nav { max-width: 1140px; margin: 0 auto; padding: 0 20px; height: 56px; display: flex; align-items: center; gap: 20px; }
+.nav-logo { font-size: 20px; font-weight: 800; color: #D4A017; letter-spacing: -0.5px; }
+.nav-logo span { color: #C8102E; }
+.nav-links { display: flex; gap: 4px; list-style: none; margin-left: auto; }
+.nav-links a { color: #999; font-size: 14px; padding: 6px 12px; border-radius: 6px; transition: color .15s, background .15s; }
+.nav-links a:hover { color: #fff; background: #1e1e1e; }
+.nav-links a.active { color: #D4A017; }
+
+main { flex: 1; max-width: 1140px; width: 100%; margin: 0 auto; padding: 0 20px 48px; }
+
+.hero { padding: 40px 0 28px; text-align: center; }
+.hero h1 { font-size: clamp(22px, 3.5vw, 32px); font-weight: 800; color: #fff; line-height: 1.2; max-width: 900px; margin: 0 auto; }
+.hero h1 em { color: #D4A017; font-style: normal; }
+.hero > p { color: #a0a0a0; margin-top: 14px; font-size: 15px; max-width: 800px; margin-left: auto; margin-right: auto; line-height: 1.6; }
+.updated-badge { display: inline-flex; align-items: center; gap: 7px; margin-top: 18px; background: #181818; border: 1px solid #2a2a2a; border-radius: 20px; padding: 5px 14px; font-size: 12px; color: #999; }
+.updated-badge::before { content: ''; display: inline-block; width: 7px; height: 7px; border-radius: 50%; background: #22c55e; flex-shrink: 0; }
+
+.section { padding: 24px 0; }
+.section-title { font-size: 11px; font-weight: 700; color: #D4A017; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 18px; padding-bottom: 10px; border-bottom: 1px solid #1e1e1e; }
+
+.cards-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 16px; }
+
+.lottery-card { background: #181818; border: 1px solid #232323; border-radius: 12px; overflow: hidden; display: flex; flex-direction: column; transition: border-color .2s, transform .15s; }
+.lottery-card:hover { border-color: #444; transform: translateY(-2px); }
+
+.card-header { padding: 10px 16px; background: #222; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #2a2a2a; }
+.company-label { font-size: 13px; font-weight: 700; color: #eee; }
+.date-badge { font-size: 13px; font-weight: 700; background: #333; padding: 2px 8px; border-radius: 4px; color: #aaa; }
+
+.card-body { padding: 16px; display: flex; flex-direction: column; gap: 12px; }
+.game-info { display: flex; justify-content: space-between; align-items: center; min-height: 40px; }
+.game-title { font-size: clamp(20px, 2.2vw, 24px); font-weight: 800; color: #fff; }
+.game-logo { width: 40px; height: 40px; background-size: contain; background-repeat: no-repeat; background-position: center; }
+
+.numbers-row { display: flex; flex-wrap: wrap; gap: 8px; min-height: 46px; align-items: center; }
+.num-ball { width: 44px; height: 44px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 16px; font-weight: 800; flex-shrink: 0; box-shadow: inset 0 -3px 0 rgba(0,0,0,0.2); }
+.num-ball.r { background: #C8102E; color: #fff; }
+.num-ball.b { background: #004B8D; color: #fff; }
+.num-ball.g { background: #D4A017; color: #111; }
+
+.card-footer { padding: 10px 16px; background: #141414; border-top: 1px solid #232323; display: flex; justify-content: flex-end; margin-top: auto; }
+.card-link { font-size: 12px; color: #777; font-weight: 600; text-decoration: none; transition: color .15s; }
+.lottery-card:hover .card-link { color: #D4A017; }
+
+.lottery-card[data-company="loteria-nacional"] .card-header { background: #1b4d24; border-bottom-color: #276332; }
+.lottery-card[data-company="loteria-nacional"] .date-badge { background: #276332; color: #fff; }
+.lottery-card[data-company="leidsa"] .card-header { background: #8a6d00; border-bottom-color: #a38200; }
+.lottery-card[data-company="leidsa"] .date-badge { background: #a38200; color: #fff; }
+.lottery-card[data-company="la-real"] .card-header { background: #111d61; border-bottom-color: #1a2a8c; }
+.lottery-card[data-company="la-real"] .date-badge { background: #1a2a8c; color: #fff; }
+.lottery-card[data-company="loteka"] .card-header { background: #007791; border-bottom-color: #0093b3; }
+.lottery-card[data-company="loteka"] .date-badge { background: #0093b3; color: #fff; }
+.lottery-card[data-company="la-primera"] .card-header { background: #8a0b1f; border-bottom-color: #b0102a; }
+.lottery-card[data-company="la-primera"] .date-badge { background: #b0102a; color: #fff; }
+.lottery-card[data-company="anguilla"] .card-header { background: #8a3d00; border-bottom-color: #b35200; }
+.lottery-card[data-company="anguilla"] .date-badge { background: #b35200; color: #fff; }
+.lottery-card[data-company="new-york"], .lottery-card[data-company="florida"] { border-style: double; border-width: 3px; }
+
+.index-seo { background: #141414; border: 1px solid #202020; border-radius: 12px; padding: 26px 30px; margin: 8px 0; }
+.index-seo h2 { color: #D4A017; font-size: 19px; font-weight: 700; margin-bottom: 12px; margin-top: 22px; }
+.index-seo h2:first-child { margin-top: 0; }
+.index-seo p { color: #a0a0a0; font-size: 14px; line-height: 1.75; margin-bottom: 10px; }
+.index-seo ul { color: #a0a0a0; font-size: 14px; line-height: 1.75; padding-left: 22px; margin-bottom: 10px; }
+.index-seo li { margin-bottom: 4px; }
+.index-seo strong { color: #e0e0e0; font-weight: 600; }
+.index-seo a { color: #D4A017; text-decoration: underline; }
+
+.site-footer { background: #0d0d0d; border-top: 1px solid #1a1a1a; padding: 32px 0 22px; margin-top: auto; text-align: center; font-size: 13px; color: #888; }
+.footer-links { margin-bottom: 16px; }
+.footer-links a { color: #bbb; text-decoration: none; padding: 0 10px; border-right: 1px solid #333; }
+.footer-links a:last-child { border-right: none; }
+.footer-links a:hover { color: #D4A017; }
+.site-footer p a { color: #bbb; text-decoration: underline; }
+.site-footer p a:hover { color: #fff; }
+
+@media (max-width: 640px) {
+  .nav { padding: 0 14px; }
+  main { padding: 0 14px 40px; }
+  .cards-grid { grid-template-columns: 1fr; }
+  .hero { padding: 28px 0 20px; }
+  .index-seo { padding: 18px; }
+  .index-seo h2 { font-size: 17px; }
+}
+</style>
+</head>
+<body>
+<header class="site-header">
+<nav class="nav">
+  <a href="https://numerosdehoy.online/" class="nav-logo">Loterias<span>RD</span></a>
+  <ul class="nav-links">
+    <li><a href="https://numerosdehoy.online/" class="active">Inicio</a></li>
+    <li><a href="https://numerosdehoy.online/loterias/">Todas</a></li>
+    <li><a href="https://numerosdehoy.online/tarde/">Tarde</a></li>
+    <li><a href="https://numerosdehoy.online/noche/">Noche</a></li>
+    <li><a href="https://numerosdehoy.online/numeros-frios/">Fríos</a></li>
+  </ul>
+</nav>
+</header>
+<main>
+  <section class="hero">
+    <h1>Numeros de Hoy: <em>Resultados de Loteria Nacional, Leidsa, Real, Loteka y New York</em></h1>
+    <p>Consulta las pizarras oficiales para saber <strong>qué números salieron hoy</strong> en la Quiniela Pale, Loto Leidsa, Gana Más y todos los sorteos nacionales e internacionales. Actualización en tiempo real para la República Dominicana y la diáspora.</p>
+    <span class="updated-badge">Resultados de hoy</span>
+  </section>
+  <section class="section">
+    <p class="section-title">Resultados de la Jornada</p>
+    <div class="cards-grid">
+
+<a href="https://numerosdehoy.online/loterias/loteria-nacional/" class="lottery-card" data-slug="loteria-nacional" data-company="loteria-nacional">
+  <div class="card-header">
+    <span class="company-label">LOTERIA NACIONAL</span>
+    <span class="date-badge">Hoy</span>
+  </div>
+  <div class="card-body">
+    <div class="game-info">
+      <span class="game-title">Loteria Nacional</span>
+      <div class="game-logo" style="background-image:url('https://cdn-lottery.kiskoo.com/loterias-dominicanas/7827e5ee87f05e864aa79f64210269c5.png')"></div>
+    </div>
+    <div class="numbers-row"><div class="num-ball r">02</div><div class="num-ball b">34</div><div class="num-ball g">98</div></div>
+  </div>
+  <div class="card-footer"><span class="card-link">Ver historial →</span></div>
+</a>
+
+<a href="https://numerosdehoy.online/loterias/anguilla/" class="lottery-card" data-slug="anguilla" data-company="anguilla">
+  <div class="card-header">
+    <span class="company-label">Anguila Mañana</span>
+    <span class="date-badge">Hoy</span>
+  </div>
+  <div class="card-body">
+    <div class="game-info">
+      <span class="game-title">Anguila Mañana</span>
+      <div class="game-logo" style="background-image:url('https://cdn-lottery.kiskoo.com/loterias-dominicanas/anguila-manana-10am.png')"></div>
+    </div>
+    <div class="numbers-row"><div class="num-ball r">67</div><div class="num-ball b">33</div><div class="num-ball g">42</div></div>
+  </div>
+  <div class="card-footer"><span class="card-link">Ver historial →</span></div>
+</a>
+
+<a href="https://numerosdehoy.online/loterias/anguilla/" class="lottery-card" data-slug="anguilla" data-company="anguilla">
+  <div class="card-header">
+    <span class="company-label">Anguila Medio Día</span>
+    <span class="date-badge">Hoy</span>
+  </div>
+  <div class="card-body">
+    <div class="game-info">
+      <span class="game-title">Anguila Medio Día</span>
+      <div class="game-logo" style="background-image:url('https://cdn-lottery.kiskoo.com/loterias-dominicanas/anguila-medio-dia-1pm.png')"></div>
+    </div>
+    <div class="numbers-row"><div class="num-ball r">14</div><div class="num-ball b">08</div><div class="num-ball g">17</div></div>
+  </div>
+  <div class="card-footer"><span class="card-link">Ver historial →</span></div>
+</a>
+
+<a href="https://numerosdehoy.online/loterias/anguilla/" class="lottery-card" data-slug="anguilla" data-company="anguilla">
+  <div class="card-header">
+    <span class="company-label">Anguila Tarde</span>
+    <span class="date-badge">Hoy</span>
+  </div>
+  <div class="card-body">
+    <div class="game-info">
+      <span class="game-title">Anguila Tarde</span>
+      <div class="game-logo" style="background-image:url('https://cdn-lottery.kiskoo.com/loterias-dominicanas/anguila-tarde-6pm.png')"></div>
+    </div>
+    <div class="numbers-row"><div class="num-ball r">98</div><div class="num-ball b">19</div><div class="num-ball g">93</div></div>
+  </div>
+  <div class="card-footer"><span class="card-link">Ver historial →</span></div>
+</a>
+
+<a href="https://numerosdehoy.online/loterias/anguilla/" class="lottery-card" data-slug="anguilla" data-company="anguilla">
+  <div class="card-header">
+    <span class="company-label">Anguila Noche</span>
+    <span class="date-badge">Hoy</span>
+  </div>
+  <div class="card-body">
+    <div class="game-info">
+      <span class="game-title">Anguila Noche</span>
+      <div class="game-logo" style="background-image:url('https://cdn-lottery.kiskoo.com/loterias-dominicanas/anguila-noche-9pm.png')"></div>
+    </div>
+    <div class="numbers-row"><div class="num-ball r">13</div><div class="num-ball b">91</div><div class="num-ball g">08</div></div>
+  </div>
+  <div class="card-footer"><span class="card-link">Ver historial →</span></div>
+</a>
+
+<a href="https://numerosdehoy.online/loterias/leidsa/" class="lottery-card" data-slug="leidsa" data-company="leidsa">
+  <div class="card-header">
+    <span class="company-label">Leidsa</span>
+    <span class="date-badge">Hoy</span>
+  </div>
+  <div class="card-body">
+    <div class="game-info">
+      <span class="game-title">Quiniela Leidsa</span>
+      <div class="game-logo" style="background-image:url('https://cdn-lottery.kiskoo.com/loterias-dominicanas/quiniela-leidsa.png')"></div>
+    </div>
+    <div class="numbers-row"><div class="num-ball r">65</div><div class="num-ball b">39</div><div class="num-ball g">11</div></div>
+  </div>
+  <div class="card-footer"><span class="card-link">Ver historial →</span></div>
+</a>
+
+<a href="https://numerosdehoy.online/loterias/leidsa/" class="lottery-card" data-slug="leidsa" data-company="leidsa">
+  <div class="card-header">
+    <span class="company-label">Leidsa</span>
+    <span class="date-badge">Hoy</span>
+  </div>
+  <div class="card-body">
+    <div class="game-info">
+      <span class="game-title">Pega 3 Más</span>
+      <div class="game-logo" style="background-image:url('https://cdn-lottery.kiskoo.com/loterias-dominicanas/pega-3-mas.png')"></div>
+    </div>
+    <div class="numbers-row"><div class="num-ball r">30</div><div class="num-ball b">24</div><div class="num-ball g">50</div></div>
+  </div>
+  <div class="card-footer"><span class="card-link">Ver historial →</span></div>
+</a>
+
+<a href="https://numerosdehoy.online/loterias/leidsa/" class="lottery-card" data-slug="leidsa" data-company="leidsa">
+  <div class="card-header">
+    <span class="company-label">Leidsa</span>
+    <span class="date-badge">Hoy</span>
+  </div>
+  <div class="card-body">
+    <div class="game-info">
+      <span class="game-title">Super Kino TV</span>
+      <div class="game-logo" style="background-image:url('https://cdn-lottery.kiskoo.com/loterias-dominicanas/super-kino.png')"></div>
+    </div>
+    <div class="numbers-row"><div class="num-ball r">02</div><div class="num-ball b">03</div><div class="num-ball g">12</div><div class="num-ball r">17</div><div class="num-ball b">19</div><div class="num-ball g">29</div><div class="num-ball r">34</div><div class="num-ball b">39</div><div class="num-ball g">41</div><div class="num-ball r">42</div><div class="num-ball b">44</div><div class="num-ball g">46</div><div class="num-ball r">50</div><div class="num-ball b">54</div><div class="num-ball g">58</div><div class="num-ball r">61</div><div class="num-ball b">64</div><div class="num-ball g">69</div><div class="num-ball r">70</div><div class="num-ball b">78</div></div>
+  </div>
+  <div class="card-footer"><span class="card-link">Ver historial →</span></div>
+</a>
+
+<a href="https://numerosdehoy.online/loterias/leidsa/" class="lottery-card" data-slug="leidsa" data-company="leidsa">
+  <div class="card-header">
+    <span class="company-label">Leidsa</span>
+    <span class="date-badge">Hoy</span>
+  </div>
+  <div class="card-body">
+    <div class="game-info">
+      <span class="game-title">Loto Pool</span>
+      <div class="game-logo" style="background-image:url('https://cdn-lottery.kiskoo.com/b9f95bbf6087f617f58efb5078ca5898.png')"></div>
+    </div>
+    <div class="numbers-row"><div class="num-ball r">06</div><div class="num-ball b">22</div><div class="num-ball g">23</div><div class="num-ball r">24</div><div class="num-ball b">25</div></div>
+  </div>
+  <div class="card-footer"><span class="card-link">Ver historial →</span></div>
+</a>
+
+<a href="https://numerosdehoy.online/loterias/la-primera/" class="lottery-card" data-slug="la-primera" data-company="la-primera">
+  <div class="card-header">
+    <span class="company-label">LA PRIMERA</span>
+    <span class="date-badge">Hoy</span>
+  </div>
+  <div class="card-body">
+    <div class="game-info">
+      <span class="game-title">La Primera Noche</span>
+      <div class="game-logo" style="background-image:url('https://cdn-lottery.kiskoo.com/loterias-dominicanas/la-primera-dia.png')"></div>
+    </div>
+    <div class="numbers-row"><div class="num-ball r">23</div><div class="num-ball b">16</div><div class="num-ball g">25</div></div>
+  </div>
+  <div class="card-footer"><span class="card-link">Ver historial →</span></div>
+</a>
+
+<a href="https://numerosdehoy.online/loterias/la-real/" class="lottery-card" data-slug="la-real" data-company="la-real">
+  <div class="card-header">
+    <span class="company-label">LA REAL</span>
+    <span class="date-badge">Hoy</span>
+  </div>
+  <div class="card-body">
+    <div class="game-info">
+      <span class="game-title">Quiniela Real</span>
+      <div class="game-logo" style="background-image:url('https://cdn-lottery.kiskoo.com/loterias-dominicanas/loteria-real.png')"></div>
+    </div>
+    <div class="numbers-row"><div class="num-ball r">91</div><div class="num-ball b">93</div><div class="num-ball g">99</div></div>
+  </div>
+  <div class="card-footer"><span class="card-link">Ver historial →</span></div>
+</a>
+
+<a href="https://numerosdehoy.online/loterias/loto-5/" class="lottery-card" data-slug="loto-5" data-company="loto-5">
+  <div class="card-header">
+    <span class="company-label">LOTO 5</span>
+    <span class="date-badge">Hoy</span>
+  </div>
+  <div class="card-body">
+    <div class="game-info">
+      <span class="game-title">Loto 5</span>
+      <div class="game-logo" style="background-image:url('https://cdn-lottery.kiskoo.com/loterias-dominicanas/loto-5.png')"></div>
+    </div>
+    <div class="numbers-row"><div class="num-ball r">04</div><div class="num-ball b">12</div><div class="num-ball g">14</div><div class="num-ball r">23</div><div class="num-ball b">24</div><div class="num-ball g">10</div></div>
+  </div>
+  <div class="card-footer"><span class="card-link">Ver historial →</span></div>
+</a>
+
+<a href="https://numerosdehoy.online/loterias/loteka/" class="lottery-card" data-slug="loteka" data-company="loteka">
+  <div class="card-header">
+    <span class="company-label">LOTEKA</span>
+    <span class="date-badge">Hoy</span>
+  </div>
+  <div class="card-body">
+    <div class="game-info">
+      <span class="game-title">Quiniela Loteka</span>
+      <div class="game-logo" style="background-image:url('https://cdn-lottery.kiskoo.com/loterias-dominicanas/quiniela-loteka.png')"></div>
+    </div>
+    <div class="numbers-row"><div class="num-ball r">26</div><div class="num-ball b">42</div><div class="num-ball g">59</div></div>
+  </div>
+  <div class="card-footer"><span class="card-link">Ver historial →</span></div>
+</a>
+
+<a href="https://numerosdehoy.online/loterias/mega-chances/" class="lottery-card" data-slug="mega-chances" data-company="mega-chances">
+  <div class="card-header">
+    <span class="company-label">MEGA CHANCES</span>
+    <span class="date-badge">Hoy</span>
+  </div>
+  <div class="card-body">
+    <div class="game-info">
+      <span class="game-title">Mega Chance</span>
+      <div class="game-logo" style="background-image:url('https://cdn-lottery.kiskoo.com/loterias-dominicanas/mega-chances.png')"></div>
+    </div>
+    <div class="numbers-row"><div class="num-ball r">22</div><div class="num-ball b">25</div><div class="num-ball g">34</div><div class="num-ball r">37</div><div class="num-ball b">58</div></div>
+  </div>
+  <div class="card-footer"><span class="card-link">Ver historial →</span></div>
+</a>
+
+<a href="https://numerosdehoy.online/loterias/la-suerte/" class="lottery-card" data-slug="la-suerte" data-company="la-suerte">
+  <div class="card-header">
+    <span class="company-label">LA SUERTE</span>
+    <span class="date-badge">Hoy</span>
+  </div>
+  <div class="card-body">
+    <div class="game-info">
+      <span class="game-title">La Suerte 6PM</span>
+      <div class="game-logo" style="background-image:url('https://cdn-lottery.kiskoo.com/loterias-dominicanas/la-suerte-dia.png')"></div>
+    </div>
+    <div class="numbers-row"><div class="num-ball r">04</div><div class="num-ball b">46</div><div class="num-ball g">21</div></div>
+  </div>
+  <div class="card-footer"><span class="card-link">Ver historial →</span></div>
+</a>
+
+<a href="https://numerosdehoy.online/loterias/gana-mas/" class="lottery-card" data-slug="gana-mas" data-company="gana-mas">
+  <div class="card-header">
+    <span class="company-label">GANA MAS</span>
+    <span class="date-badge">Hoy</span>
+  </div>
+  <div class="card-body">
+    <div class="game-info">
+      <span class="game-title">Gana Mas</span>
+      <div class="game-logo" style="background-image:url('https://cdn-lottery.kiskoo.com/loterias-dominicanas/gana-mas.png')"></div>
+    </div>
+    <div class="numbers-row"><div class="num-ball r">31</div><div class="num-ball b">87</div><div class="num-ball g">69</div></div>
+  </div>
+  <div class="card-footer"><span class="card-link">Ver historial →</span></div>
+</a>
+
+<a href="https://numerosdehoy.online/loterias/new-york/" class="lottery-card" data-slug="new-york" data-company="new-york">
+  <div class="card-header">
+    <span class="company-label">NEW YORK</span>
+    <span class="date-badge">Hoy</span>
+  </div>
+  <div class="card-body">
+    <div class="game-info">
+      <span class="game-title">New York 10:30</span>
+      <div class="game-logo" style="background-image:url('https://cdn-lottery.kiskoo.com/loterias-dominicanas/new-york-tarde.png')"></div>
+    </div>
+    <div class="numbers-row"><div class="num-ball r">99</div><div class="num-ball b">91</div><div class="num-ball g">04</div></div>
+  </div>
+  <div class="card-footer"><span class="card-link">Ver historial →</span></div>
+</a>
+
+<a href="https://numerosdehoy.online/loterias/quiniela-lotedom/" class="lottery-card" data-slug="quiniela-lotedom" data-company="quiniela-lotedom">
+  <div class="card-header">
+    <span class="company-label">QUINIELA LOTEDOM</span>
+    <span class="date-badge">Hoy</span>
+  </div>
+  <div class="card-body">
+    <div class="game-info">
+      <span class="game-title">Quiniela LoteDom</span>
+      <div class="game-logo" style="background-image:url('https://cdn-lottery.kiskoo.com/loterias-dominicanas/d46144f7e1f664fee5ba811f984c246e.png')"></div>
+    </div>
+    <div class="numbers-row"><div class="num-ball r">28</div><div class="num-ball b">31</div><div class="num-ball g">18</div></div>
+  </div>
+  <div class="card-footer"><span class="card-link">Ver historial →</span></div>
+</a>
+
+<a href="https://numerosdehoy.online/loterias/el-quemaito/" class="lottery-card" data-slug="el-quemaito" data-company="el-quemaito">
+  <div class="card-header">
+    <span class="company-label">EL QUEMAITO</span>
+    <span class="date-badge">Hoy</span>
+  </div>
+  <div class="card-body">
+    <div class="game-info">
+      <span class="game-title">El Quemaito Mayor</span>
+      <div class="game-logo" style="background-image:url('https://cdn-lottery.kiskoo.com/loterias-dominicanas/c700bf17161eed892af1be091a480ca4.png')"></div>
+    </div>
+    <div class="numbers-row"><div class="num-ball r">63</div></div>
+  </div>
+  <div class="card-footer"><span class="card-link">Ver historial →</span></div>
+</a>
+
+<a href="https://numerosdehoy.online/loterias/florida/" class="lottery-card" data-slug="florida" data-company="florida">
+  <div class="card-header">
+    <span class="company-label">FLORIDA</span>
+    <span class="date-badge">Hoy</span>
+  </div>
+  <div class="card-body">
+    <div class="game-info">
+      <span class="game-title">Florida Noche</span>
+      <div class="game-logo" style="background-image:url('https://cdn-lottery.kiskoo.com/loterias-dominicanas/florida-dia.png')"></div>
+    </div>
+    <div class="numbers-row"><div class="num-ball r">09</div><div class="num-ball b">13</div><div class="num-ball g">64</div></div>
+  </div>
+  <div class="card-footer"><span class="card-link">Ver historial →</span></div>
+</a>
+
+    </div>
+  </section>
+  <div class="index-seo">
+    <h2>Resultados de las Loterias Dominicanas en Tiempo Real</h2>
+    <p>En <strong>LoteriasRD</strong> facilitamos el acceso a los <strong>numeros ganadores de hoy</strong> de cada sorteo minutos después de su realización. Esta pizarra centraliza la información de los <strong>numeros de la loteria de hoy</strong>, sincronizando las tómbolas oficiales para la comodidad de los jugadores en la isla y en el extranjero.</p>
+
+    <p>Si sigues los <strong>numeros de hoy leidsa</strong>, aquí verás el acumulado del Loto tras cada jornada. Igualmente, reflejamos los <strong>numeros de hoy loteria nacional</strong> y los <strong>numeros de hoy la real</strong>, asegurando que cada <strong>bolo premiado</strong> esté validado por los boletines institucionales correspondientes. Nuestra misión es que la <strong>diáspora dominicana</strong> se mantenga conectada con la suerte de su tierra natal mediante una interfaz rápida y optimizada.</p>
+
+    <h2>Validación de Resultados y Oficialidad</h2>
+    <p>Todos los resultados mostrados en nuestra plataforma son extraídos de las fuentes oficiales de cada institución. Recomendamos a nuestros usuarios realizar la <strong>validación de resultados</strong> física en su banca de confianza antes de descartar cualquier ticket. Los <strong>numeros de hoy</strong> que publicamos sirven como una guía informativa rápida para el público apostador.</p>
+
+    <h2>Horarios de Sorteos y Tómbolas</h2>
+    <p>La puntualidad es clave en el mundo del azar. A continuación, detallamos los horarios estándar de los principales sorteos que cubrimos en <strong>LoteriasRD</strong>:</p>
+    <ul>
+      <li><strong>12:00 PM</strong> — <a href="https://numerosdehoy.online/loterias/la-primera/">La Primera</a> · <a href="https://numerosdehoy.online/loterias/quiniela-lotedom/">Lotedom</a></li>
+      <li><strong>12:30 PM</strong> — <a href="https://numerosdehoy.online/loterias/la-suerte/">La Suerte Dominicana</a></li>
+      <li><strong>12:55 PM</strong> — <a href="https://numerosdehoy.online/loterias/la-real/">La Real</a> (Quiniela, Loto Real)</li>
+      <li><strong>2:00 PM</strong> — <a href="https://numerosdehoy.online/loterias/gana-mas/">Gana Más</a></li>
+      <li><strong>2:30 PM</strong> — <a href="https://numerosdehoy.online/loterias/loteria-nacional/">Lotería Nacional</a></li>
+      <li><strong>6:00 PM</strong> — La Suerte Dominicana (2da tirada)</li>
+      <li><strong>7:55 PM</strong> — <a href="https://numerosdehoy.online/loterias/loteka/">Loteka</a></li>
+      <li><strong>8:00 PM</strong> — La Primera (noche)</li>
+      <li><strong>8:55 PM</strong> — <a href="https://numerosdehoy.online/loterias/leidsa/">Leidsa</a> <em>(domingos: 3:55 PM)</em></li>
+      <li><strong>9:00 PM</strong> — Lotería Nacional <em>(domingos: 6:00 PM)</em></li>
+    </ul>
+
+    <h2>Requerimientos para Jugar y Cobrar</h2>
+    <p>Para participar en las loterías dominicanas, debe ser mayor de 18 años. En caso de resultar ganador, es indispensable presentar el ticket original en buen estado. Los premios mayores de instituciones como Leidsa o la Lotería Nacional suelen requerir trámites presenciales en sus oficinas principales.</p>
+
+    <h2>Eventos Especiales y Acumulados</h2>
+    <p>No olvides seguir los sorteos especiales con botes millonarios que captan la atención nacional:</p>
+    <ul>
+      <li><strong>Loto Leidsa</strong> — miércoles y sábados (8:55 PM)</li>
+      <li><strong>Loto Real</strong> — martes y viernes (12:55 PM)</li>
+      <li><strong>Mega Lotto (Loteka)</strong> — lunes y jueves (7:55 PM)</li>
+      <li><strong>Mega Millions / PowerBall</strong> — Sorteos de EE.UU. con botes astronómicos seguidos por muchos dominicanos.</li>
+    </ul>
+  </div>
+</main>
+<footer class="site-footer">
+<div class="footer-links">
+  <a href="https://numerosdehoy.online/loterias/">Todas las Loterias</a>
+  <a href="https://numerosdehoy.online/tarde/">Resultados Tarde</a>
+  <a href="https://numerosdehoy.online/noche/">Resultados Noche</a>
+  <a href="https://numerosdehoy.online/numeros-frios/">Números Fríos</a>
+</div>
+<p>&copy; 2026 LoteriasRD &mdash; Resultados de <a href="https://numerosdehoy.online/">Loterias Dominicanas</a></p>
+</footer>
+</body>
+</html>
